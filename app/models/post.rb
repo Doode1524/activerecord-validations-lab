@@ -11,11 +11,11 @@ class Post < ActiveRecord::Base
     #     end
     # end
 
-    def non_clickbait?
-        unless title.include?("Won't Believe") || title.include?("Secret") || title.include?("Top[0-9]") || !title.include?("Guess")
-            errors.add(:title, "must be clickbait")
-        end
-    end
+    # def non_clickbait?
+    #     unless title.include?("Won't Believe") || title.include?("Secret") || title.include?("Top[0-9]") || title.include?("Guess")
+    #         errors.add(:title, "must be clickbait")
+    #     end
+    # end
 end
 
     
